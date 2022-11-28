@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+/*.container{
+    width: 250px;
+    height: 250px;
+    border: 4px solid red;
+    border-radius: 50%;
+    margin-left: 300px;
+    margin-top: 0px;
+    position: relative;
+}
+ul{
+    list-style-type: none;
+    font-size: 30px;
+    margin-top: 30px;
+}
+li{
+    color: white;
+}
+.one{
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 180px ;
+}
+.two{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 210px;
+}
+.three{
+    position: absolute;
+    margin-left: 232px;
+    margin-top: 60px;
+}
+.four{
+    position: absolute;
+    margin-left: 225px;
+    margin-top: 115px;
+}
+.five{
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 170px;
+}
+.six{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 120px;
+}
+.seven{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 55px;
+}
+.eight{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+.nine{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 5px;
+}
+.ten{
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 20px;
+}
+.eleven{
+    position: absolute;
+    margin-left: 55px;
+    margin-top: -20px;
+}
+.twelve{
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 115px;
+} */
+.box{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: try 4s linear infinite;
+}
+@keyframes try{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-360deg) rotateY(360deg);  
+    }
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(150px);
+}
+.cover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #0f0;
+    transform: translateZ(-380px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(0,255,0,0.2), 
+    0 0 200px rgba(0,255,0,0.4),
+    0 0 300px rgba(0,255,0,0.6),
+    0 0 400px rgba(0,255,0,08),
+    0 0 500px rgba(0,255,0,0.1);
+}
+.box div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.box div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#00ec00);
+    transform: rotateY(calc(90deg *var(--i))) translateZ(150px);
+}
+.box1{
+    position: relative;
+    margin-left: 500px;
+    
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: try 4s linear infinite;
+}
+@keyframes try{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);  
+    }
+}
+.cover1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(150px);
+}
+.cover1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgb(255, 0, 0);
+    transform: translateZ(-380px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(68, 2, 2, 0.2), 
+    0 0 200px rgb(180, 3, 3),
+    0 0 300px rgba(255, 0, 0, 0.6),
+    0 0 400px rgba(255, 0, 0, 0.8),
+    0 0 500px rgba(255, 0, 0, 0.1);
+}
+.box1 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.box1 div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#ec0800);
+    transform: rotateY(calc(90deg *var(--i))) translateZ(150px);
+}
